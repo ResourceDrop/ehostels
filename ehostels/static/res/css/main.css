@@ -275,17 +275,23 @@
   .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
       border-color: #4ec3cd;
   }
-  
+/*   
   .navbar-inverse .navbar-toggle {
       border-color: transparent;
   }
-  
+   */
   .logo img {
     margin-top: 6px;
   }
   
-  
-  
+  /* ==========================================================================
+     Page specific styles
+     ========================================================================== */
+  #create {
+    background: #fff;
+  }
+
+
   /* ==========================================================================
      Main styles
      ========================================================================== */
