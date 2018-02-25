@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!--fav icons-->
-   <link rel="icon" type="image/png" sizes="192x192" href="../static/res/img/fav-icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../static/res/img/fav-icons/android-icon-192x192.png">
 
     <!-- Styles -->
     <link rel="stylesheet" href="../static/res/css/font-awesome.min.css">
@@ -17,6 +17,7 @@
         type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="../static/res/css/main2.css">
+    <script src="../static/js/image_upload.js"></script>
 
 </head>
 
@@ -59,9 +60,13 @@
                 <p>See and manage your wonderful hostels.<br>You have no hostels on our platform, click the button below to create one</p>
                 <p><a class="btn btn-primary btn-lg" href="#setup" role="button">Create Hostel </a></p>
                 {%if hasHostel%}-->
-                <p>See and manage your wonderful hostels.<br>Click the <span style="color:darkcyan;">View hostels</span> button to see your existing hostel or click 
-                    the <span style="color:darkcyan;">Create New Hostel</span> button to add to your existing hostel. You can navigate through your existing hostels and make changes.</p>
-                <p> <a href="#view" class="btn btn-primary btn-lg">View Hostels</a>&nbsp;&nbsp;
+                <p>See and manage your wonderful hostels.
+                    <br>Click the
+                    <span style="color:darkcyan;">View hostels</span> button to see your existing hostel or click the
+                    <span style="color:darkcyan;">Create New Hostel</span> button to add to your existing hostel. You can navigate through your existing
+                    hostels and make changes.</p>
+                <p>
+                    <a href="#view" class="btn btn-primary btn-lg">View Hostels</a>&nbsp;&nbsp;
                     <a class="btn btn-primary btn-lg" href="#setup" role="button">Create New Hostel </a>
                 </p>
             </div>
@@ -71,8 +76,8 @@
             <div class="py-5 text-center" id="setup">
                 <img class="d-block mx-auto mb-4" src="../static/res/img/official_logo.png" alt="logo" width="90" height="90">
                 <h2>Hostel setup</h2>
-                <p class="lead">Fill the fields below appropriately and correctly to setup your hostel.<br>After setup, your hostel will be
-                    pushed to the online space for the public to see.</p>
+                <p class="lead">Fill the fields below appropriately and correctly to setup your hostel.
+                    <br>After setup, your hostel will be pushed to the online space for the public to see.</p>
             </div>
             <hr class="mb-4">
             <div class="row">
@@ -155,10 +160,23 @@
                                     Zip code required.
                                 </div>
                             </div>
+                            <div class="col-md-6 mb-3">
+                                <div>
+                                    <label for="image_upload">Upload hostel image (JPG, PNG)</label>
+                                    <input type="file" class="form-control" id="image_upload" accept=".jpg, .jpeg, .png, .gif" required>
+                                    <div class="invalid-feedback">
+                                        Image upload required
+                                    </div>
+                                </div>
+                                <div class="preview">
+                                </div>
+                            </div>
                         </div>
 
                         <hr class="mb-4">
-                        <a href="payment.html"> <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to payment</button></a>  
+                        <a href="payment.html">
+                            <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to payment</button>
+                        </a>
                     </form>
                 </div>
             </div>
