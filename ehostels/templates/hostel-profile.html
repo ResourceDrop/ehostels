@@ -46,10 +46,46 @@
         </div>
     </nav>
     <main>
-        <header class="mp-header mt-50px">
-
+        <header class="header mt-50px" id="header-bg">
+            <!-- Add image as the background-->
+            <div class="row header-info">
+                <div class="col-sm-10 col-sm-offset-1 text-center">
+                    <h1>
+                        <!--Get hostel name and place it here-->
+                    </h1>
+                    <br />
+                </div>
+            </div>
         </header>
         <div class="container">
+            <div class="py-5 text-center">
+                <h2>
+                    <!--Policy title goes here-->
+                </h2>
+                <p class="lead">
+                    <!--Managers policy goes here-->
+                </p>
+            </div>
+
+            <hr class="col-md-12 mb-4">
+
+            <div class="py-5 text-center">
+                <h2>Hostel Facilities</h2>
+                <p class="lead">
+                    <!--Facilities goes here-->
+                </p>
+            </div>
+
+
+            <hr class="col-md-12 mb-4">
+
+            <div class="py-5 text-center">
+                <h2>Room Categories</h2>
+                <p class="lead">
+                    <!--Hostel categories goes here-->
+                </p>
+            </div>
+
             <footer class="my-5 pt-5 text-muted text-center text-small">
                 <p class="mb-1">&copy; 2017-2018
                     <strong>the Codables</strong>
@@ -96,6 +132,14 @@
                     });
                 }, false);
             })();
+
+        // Starter Javascript for loading image into header
+        var file_path = "url(../static/res/img/header_bg6.jpg)";
+        var yell = "blue";
+        $(document).ready(function () {
+            $("#header-bg").css("background-image", file_path );
+        });
+
     </script>
 </body>
 
