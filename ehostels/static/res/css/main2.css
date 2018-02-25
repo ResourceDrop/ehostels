@@ -179,6 +179,11 @@
   }
   
   
+.btn a{
+  color: #ffffff;
+  display: inline-block;
+}
+  
   @media (max-width: 480px) { 
   
     .btn-lg {
