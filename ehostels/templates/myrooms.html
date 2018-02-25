@@ -9,9 +9,6 @@
 
     <title>eHostels | My rooms</title>
     <link rel="icon" type="image/png" sizes="192x192" href="../static/res/img/fav-icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../static/res/img/fav-icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../static/res/img/fav-icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../static/res/img/fav-icons/img/favicon-16x16.png">
 
     <link rel="stylesheet" href="../static/res/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet'
@@ -49,9 +46,8 @@
             </ul>
         </div>
     </nav>
-
     <main>
-        <div class="jumbotron">
+        <div class="jumbotron mt-50px">
             <div class="container">
                 <h1 class="display-4">My rooms</h1>
                 <!--
@@ -60,10 +56,12 @@
                                         <p><a class="btn btn-primary btn-lg" href="#setup" role="button">Create Hostel </a></p>
                                         {%if hasHostel%}-->
                 <p>Your rooms are the available physical spaces in your hostel.
-                    <br> When students visit your hostel page to make housing reservations, they will be provided with the categories you add here as options in their reservation process. 
-                    Students will make preservations based on the category of the type of room they prefer</p>
+                    <br> When students visit your hostel page to make housing reservations, they will be provided with the categories
+                    you add here as options in their reservation process. Students will make preservations based on the category
+                    of the type of room they prefer</p>
                 <p>
-                    <a href="#toRooms" class="btn btn-primary btn-lg"><i class="fa fa-plus-circle"></i> Rooms</a>
+                    <a href="#toRooms" class="btn btn-primary btn-lg">
+                        <i class="fa fa-plus-circle"></i> Rooms</a>
                 </p>
             </div>
         </div>
@@ -111,10 +109,10 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
                 <hr class="col-md-12 mb-4">
-                
+
                 <button class="btn btn-primary btn-lg col-md-6" type="submit">Add Category</button>
             </form>
 

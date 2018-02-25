@@ -211,3 +211,14 @@
 a:hover{
   text-decoration: none;
 }
+
+ /* Profile styles*/
+ .mp-header{
+  background-color: #930000;
+  min-height: 300px;
+  color: white;
+}
+
+.mt-50px{
+  margin-top: 56px
+}
