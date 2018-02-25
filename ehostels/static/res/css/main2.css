@@ -224,7 +224,7 @@ a:hover{
 }
 
 header {
-  background: url(../img/header_bg2.jpg) no-repeat center center;
+  background:no-repeat center center;
   width: 100%;
   padding: 20px 10px 60px 10px;
   height: 30vh;
