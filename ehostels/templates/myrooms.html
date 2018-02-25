@@ -30,25 +30,19 @@
 
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
             <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="hostel-tour.html">Students view</a>
+                </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">My Hostels
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Rooms</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">My Policies</a>
+                    <a class="nav-link" href="myrooms.html">Rooms</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown08" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">Username&nbsp;&nbsp;
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Username&nbsp;&nbsp;
                         <i class="fa fa-user fa-lg"></i>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdown08">
-                        <a class="dropdown-item" href="#">Profile</a>
-                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="hostel-profile.html">Hostel profile</a>
+                        <a class="dropdown-item" href="hostel.html">My hostels</a>
                         <a class="dropdown-item" href="#">Logout</a>
                     </div>
                 </li>
@@ -65,25 +59,65 @@
                                         <p>See and manage your wonderful hostels.<br>You have no hostels on our platform, click the button below to create one</p>
                                         <p><a class="btn btn-primary btn-lg" href="#setup" role="button">Create Hostel </a></p>
                                         {%if hasHostel%}-->
-                <p>Browse through our various payment options and pick a plan that suits you.
-                    <br> The prices below are regularized, hence are non-negotiable. For purposes of clarification, we encourage
-                    you to read our payment policy below.
-                    <br>You can also click the button below to see our current payment plans/prices.</p>
+                <p>Your rooms are the available physical spaces in your hostel.
+                    <br> When students visit your hostel page to make housing reservations, they will be provided with the categories you add here as options in their reservation process. 
+                    Students will make preservations based on the category of the type of room they prefer</p>
                 <p>
-                    <a href="#prices-plan" class="btn btn-primary btn-lg">Rooms</a>
+                    <a href="#toRooms" class="btn btn-primary btn-lg"><i class="fa fa-plus-circle"></i> Rooms</a>
                 </p>
             </div>
         </div>
         <div class="container">
-            <div class="py-5 text-center">
+            <div class="py-5 text-center" id="toRooms">
                 <img class="d-block mx-auto mb-4" src="../static/res/img/official_logo.png" alt="logo" width="90" height="90">
-                <h2>Add Rooms</h2>
-                <p class="lead">Fill the fields below appropriately and correctly to setup your hostel.
-                    <br>After setup, your hostel will be pushed to the online space for the public to see.</p>
+                <h2>
+                    <i class="fa fa-plus-circle"></i> Add Room Category</h2>
+                <p class="lead">Fill the fields below appropriately and correctly to add a new room category.</p>
             </div>
-            
 
-            <footer class="my-5 pt-5 text-muted text-center text-small fixed-bottom">
+            <form class="needs-validation" novalidate>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="room_type">Room category</label>
+                        <input type="text" class="form-control" id="category" placeholder="5-in-a-room" value="" required>
+                        <div class="invalid-feedback">
+                            Room category is required
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="description">Room description</label>
+                        </label>
+                        <textarea class="form-control" rows="5" cols="50" id="description"></textarea>
+                        <div class="invalid-feedback">
+                            Please enter a description
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="room_price">Price</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">GH₵</span>
+                            </div>
+                            <input type="number" class="form-control" id="rooom_price" placeholder="599" min="0" required>
+                            <div class="invalid-feedback" style="width: 100%;">
+                                Valid room price is required
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="col-md-6 mb-4">
+                <button class="btn btn-primary btn-lg btn-block col-md-6" type="submit">Add Category</button>
+            </form>
+
+            <footer class="my-5 pt-5 text-muted text-center text-small">
                 <p class="mb-1">&copy; 2017-2018
                     <strong>the Codables</strong>
                 </p>
