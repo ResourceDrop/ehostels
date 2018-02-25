@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>eHostels | My rooms</title>
+    <title>eHostels | rooms, policies & facilities</title>
     <link rel="icon" type="image/png" sizes="192x192" href="../static/res/img/fav-icons/android-icon-192x192.png">
 
     <link rel="stylesheet" href="../static/res/css/font-awesome.min.css">
@@ -49,7 +49,7 @@
     <main>
         <div class="jumbotron mt-50px">
             <div class="container">
-                <h1 class="display-4">My rooms</h1>
+                <h1 class="display-4">Rooms, Facilities & Policies</h1>
                 <!--
                                         {%if hasNoHostel%}
                                         <p>See and manage your wonderful hostels.<br>You have no hostels on our platform, click the button below to create one</p>
@@ -58,16 +58,23 @@
                 <p>Your rooms are the available physical spaces in your hostel.
                     <br> When students visit your hostel page to make housing reservations, they will be provided with the categories
                     you add here as options in their reservation process. Students will make preservations based on the category
-                    of the type of room they prefer</p>
+                    of the type of room they prefer.
+                    <br>Your policies are to give students a basic understanding of the rules & regulations of your hostel.
+                    <br>Hostel facilities are also mandatory. This informs students of the key equipments and services your hostel
+                    provides.
+                </p>
                 <p>
                     <a href="#toRooms" class="btn btn-primary btn-lg">
                         <i class="fa fa-plus-circle"></i> Rooms</a>
+                    <a href="#toFacilitiess" class="btn btn-primary btn-lg">
+                        <i class="fa fa-plus-circle"></i> Facilities</a>
+                    <a href="#toPolicies" class="btn btn-primary btn-lg">
+                        <i class="fa fa-plus-circle"></i> Policies</a>
                 </p>
             </div>
         </div>
         <div class="container">
             <div class="py-5 text-center" id="toRooms">
-                <img class="d-block mx-auto mb-4" src="../static/res/img/official_logo.png" alt="logo" width="90" height="90">
                 <h2>
                     <i class="fa fa-plus-circle"></i> Add Room Category</h2>
                 <p class="lead">Fill the fields below appropriately and correctly to add a new room category.</p>
@@ -113,7 +120,60 @@
                 </div>
                 <hr class="col-md-12 mb-4">
 
-                <button class="btn btn-primary btn-lg col-md-6" type="submit">Add Category</button>
+                <button class="btn btn-primary btn-lg col-md-4" type="submit">Add Category</button>
+            </form>
+
+            <div class="py-5 text-center" id="toFacilities">
+                <h2>
+                    <i class="fa fa-plus-circle"></i> Add Hostel Facilities</h2>
+            </div>
+
+            <form class="needs-validation" novalidate>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="facility">Enter hostel facilities here</label>
+                        </label>
+                        <textarea class="form-control" rows="5" cols="50" id="facility"></textarea>
+                        <div class="invalid-feedback">
+                            Please enter your hostel facilities
+                        </div>
+                    </div>
+                </div>
+                <hr class="col-md-12 mb-4">
+
+                <button class="btn btn-primary btn-lg col-md-4" type="submit">Submit Facilities</button>
+            </form>
+
+            <div class="py-5 text-center" id="toPolicies">
+                <h2>
+                    <i class="fa fa-plus-circle"></i> Add Hostel Policy</h2>
+            </div>
+
+            <form class="needs-validation" novalidate>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="pol_title">Policy heading/title</label>
+                        <input type="text" class="form-control" id="pol_title" placeholder="Hostel Policy for King James' Hostel" value="" required>
+                        <div class="invalid-feedback">
+                            Policy Heading/Title is required
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="policy">Enter policy here</label>
+                        </label>
+                        <textarea class="form-control" rows="5" cols="50" id="policy"></textarea>
+                        <div class="invalid-feedback">
+                            Please enter your hostel's policies
+                        </div>
+                    </div>
+                </div>
+                <hr class="col-md-12 mb-4">
+
+                <button class="btn btn-primary btn-lg col-md-4" type="submit">Submit Policy</button>
             </form>
 
             <footer class="my-5 pt-5 text-muted text-center text-small">
